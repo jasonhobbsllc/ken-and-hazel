@@ -1,0 +1,12 @@
+button,
+.button,
+input[type="submit"] {
+  @extend %button;
+  @include appearance(none);
+  border: none;
+  cursor: pointer;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  padding: ($scale * .75 ) ($scale * 1.25);
+}

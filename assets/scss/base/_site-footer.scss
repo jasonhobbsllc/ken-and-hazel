@@ -1,0 +1,35 @@
+.site-footer {
+	background-color: #061140;
+	line-height: $unitless-line-height;
+	text-align: center;
+	color: $light;
+	@include pad(4% 0);
+
+	.widget-title {
+
+	}
+
+	p {
+		margin-bottom: 0;
+	}
+
+	a {
+		color: $light-gray;
+	}
+
+	a:hover {
+		color: $color-cta;
+	}
+}
+
+.footer-widgets {
+	background-color: $light;
+	clear: both;
+	color: $base-font-color;
+	@include outer-container;
+	padding: 0 6%;
+
+	.widget-title {
+		color: $base-font-color;
+	}
+}

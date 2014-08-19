@@ -1,0 +1,2096 @@
+/*
+	Theme Name: Ken and Hazel Hobbs
+	Description: Foundation for building design bases for GG Solutions.
+	Author: Jason Hobbs, LLC
+	Author URI: http://genesisgoodies.com/
+	Version: 0.1.0
+
+	Tags: white, one-column, two-columns
+
+	Template: genesis
+	Template Version: 2.1.1
+
+	License: GPL-2.0+
+	License URI: http://www.opensource.org/licenses/gpl-license.php
+*/
+/*
+HTML5 Reset
+----------------------------------------------------------------------------- */
+/* ## Baseline Normalize
+--------------------------------------------- */
+/* normalize.css v3.0.1 | MIT License | git.io/normalize */
+/* line 8, assets/scss/base/_reset.scss */
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%; }
+
+/* line 8, assets/scss/base/_reset.scss */
+body {
+  margin: 0; }
+
+/* line 8, assets/scss/base/_reset.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+  display: block; }
+
+/* line 8, assets/scss/base/_reset.scss */
+audio, canvas, progress, video {
+  display: inline-block;
+  vertical-align: baseline; }
+
+/* line 8, assets/scss/base/_reset.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/* line 8, assets/scss/base/_reset.scss */
+[hidden], template {
+  display: none; }
+
+/* line 8, assets/scss/base/_reset.scss */
+a {
+  background: 0 0; }
+
+/* line 8, assets/scss/base/_reset.scss */
+a:active, a:hover {
+  outline: 0; }
+
+/* line 8, assets/scss/base/_reset.scss */
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+/* line 8, assets/scss/base/_reset.scss */
+b, strong {
+  font-weight: 700; }
+
+/* line 8, assets/scss/base/_reset.scss */
+dfn {
+  font-style: italic; }
+
+/* line 8, assets/scss/base/_reset.scss */
+h1 {
+  font-size: 2em;
+  margin: .67em 0; }
+
+/* line 8, assets/scss/base/_reset.scss */
+mark {
+  background: #ff0;
+  color: #333; }
+
+/* line 8, assets/scss/base/_reset.scss */
+small {
+  font-size: 80%; }
+
+/* line 8, assets/scss/base/_reset.scss */
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+/* line 8, assets/scss/base/_reset.scss */
+sup {
+  top: -.5em; }
+
+/* line 8, assets/scss/base/_reset.scss */
+sub {
+  bottom: -.25em; }
+
+/* line 8, assets/scss/base/_reset.scss */
+img {
+  border: 0; }
+
+/* line 8, assets/scss/base/_reset.scss */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* line 8, assets/scss/base/_reset.scss */
+figure {
+  margin: 1em 40px; }
+
+/* line 8, assets/scss/base/_reset.scss */
+hr {
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  height: 0; }
+
+/* line 8, assets/scss/base/_reset.scss */
+pre {
+  overflow: auto; }
+
+/* line 8, assets/scss/base/_reset.scss */
+code, kbd, pre, samp {
+  font-family: monospace,monospace;
+  font-size: 1em; }
+
+/* line 8, assets/scss/base/_reset.scss */
+button, input, optgroup, select, textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0; }
+
+/* line 8, assets/scss/base/_reset.scss */
+button {
+  overflow: visible; }
+
+/* line 8, assets/scss/base/_reset.scss */
+button, select {
+  text-transform: none; }
+
+/* line 8, assets/scss/base/_reset.scss */
+button, html input[type=button], input[type=reset], input[type=submit] {
+  -webkit-appearance: button;
+  cursor: pointer; }
+
+/* line 8, assets/scss/base/_reset.scss */
+button[disabled], html input[disabled] {
+  cursor: default; }
+
+/* line 8, assets/scss/base/_reset.scss */
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+/* line 8, assets/scss/base/_reset.scss */
+input {
+  line-height: normal; }
+
+/* line 8, assets/scss/base/_reset.scss */
+input[type=checkbox], input[type=radio] {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0; }
+
+/* line 8, assets/scss/base/_reset.scss */
+input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button {
+  height: auto; }
+
+/* line 8, assets/scss/base/_reset.scss */
+input[type=search] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box; }
+
+/* line 8, assets/scss/base/_reset.scss */
+input[type=search]::-webkit-search-cancel-button, input[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/* line 8, assets/scss/base/_reset.scss */
+fieldset {
+  border: 1px solid silver;
+  margin: 0 2px;
+  padding: .35em .625em .75em; }
+
+/* line 8, assets/scss/base/_reset.scss */
+legend {
+  border: 0;
+  padding: 0; }
+
+/* line 8, assets/scss/base/_reset.scss */
+textarea {
+  overflow: auto; }
+
+/* line 8, assets/scss/base/_reset.scss */
+optgroup {
+  font-weight: 700; }
+
+/* line 8, assets/scss/base/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 8, assets/scss/base/_reset.scss */
+td, th {
+  padding: 0; }
+
+/* ## Box Sizing
+--------------------------------------------- */
+/* line 13, assets/scss/base/_reset.scss */
+input[type="search"],
+html {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box; }
+
+/* line 17, assets/scss/base/_reset.scss */
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+     -moz-box-sizing: inherit;
+          box-sizing: inherit; }
+
+/* line 2, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/neat/neat/grid/_grid.scss */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* line 1, assets/scss/base/extends/_button.scss */
+button,
+.button,
+input[type="submit"] {
+  -webkit-font-smoothing: antialiased;
+  background-color: #1e97c3;
+  border-radius: 0.1875em;
+  color: white;
+  display: inline-block;
+  font-size: 1.375em;
+  font-weight: bold;
+  line-height: 1;
+  padding: .75em 1em;
+  text-decoration: none; }
+  /* line 13, assets/scss/base/extends/_button.scss */
+  button:hover,
+  .button:hover,
+  input[type="submit"]:hover {
+    background-color: #061140;
+    color: white; }
+
+/* line 1, assets/scss/base/_typography.scss */
+html {
+  font-size: 0.774em; }
+
+/* line 5, assets/scss/base/_typography.scss */
+body {
+  -webkit-font-smoothing: antialiased;
+  background-color: white;
+  color: #061140;
+  font-family: "proxima-nova", sans-serif;
+  font-weight: 300;
+  line-height: 1.71875;
+  margin: 0; }
+
+/* line 15, assets/scss/base/_typography.scss */
+body.base-home {
+  background: none; }
+
+/* line 19, assets/scss/base/_typography.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "adelle-sans", sans-serif;
+  line-height: 1.375em;
+  margin: 0.47133em 0;
+  text-rendering: optimizeLegibility; }
+
+/* line 26, assets/scss/base/_typography.scss */
+h1 {
+  font-size: 4.341em; }
+
+/* line 30, assets/scss/base/_typography.scss */
+h2 {
+  font-size: 3.257em; }
+
+/* line 34, assets/scss/base/_typography.scss */
+h3 {
+  font-size: 2.443em; }
+
+/* line 38, assets/scss/base/_typography.scss */
+h4 {
+  font-size: 1.777em; }
+
+/* line 42, assets/scss/base/_typography.scss */
+h5 {
+  font-size: 1.333em; }
+
+/* line 46, assets/scss/base/_typography.scss */
+h6 {
+  font-size: 1em; }
+
+/* line 50, assets/scss/base/_typography.scss */
+p {
+  margin: 0 0 0.85938em;
+  text-rendering: optimizeLegibility; }
+
+/* line 55, assets/scss/base/_typography.scss */
+p.intro {
+  font-size: 1.25em;
+  font-weight: 400; }
+
+/* line 60, assets/scss/base/_typography.scss */
+a {
+  -webkit-transition: color 0.1s linear;
+  transition: color 0.1s linear;
+  color: #1e97c3;
+  text-decoration: none; }
+  /* line 65, assets/scss/base/_typography.scss */
+  a:hover {
+    color: #0d4155; }
+  /* line 69, assets/scss/base/_typography.scss */
+  a:active, a:focus {
+    color: #0d4155;
+    outline: none; }
+
+/* line 75, assets/scss/base/_typography.scss */
+hr {
+  border-bottom: 1px solid silver;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  margin: 1.71875em 0; }
+
+/* line 83, assets/scss/base/_typography.scss */
+::-moz-selection {
+  background-color: #061140;
+  color: #fff; }
+
+/* line 88, assets/scss/base/_typography.scss */
+::-moz-selection {
+  background-color: #061140;
+  color: #fff; }
+::selection {
+  background-color: #061140;
+  color: #fff; }
+
+/* line 93, assets/scss/base/_typography.scss */
+b,
+strong {
+  font-weight: 700; }
+
+/* line 98, assets/scss/base/_typography.scss */
+cite,
+em,
+i {
+  font-style: italic; }
+
+/* line 104, assets/scss/base/_typography.scss */
+blockquote {
+  border-right: 2px solid #ECF4F9;
+  color: #061140;
+  margin: 2.57813em;
+  padding-left: 0.85938em; }
+  /* line 110, assets/scss/base/_typography.scss */
+  blockquote::before {
+    content: "\201C";
+    display: block;
+    height: 0;
+    left: -20px;
+    position: relative;
+    top: -10px; }
+  /* line 119, assets/scss/base/_typography.scss */
+  blockquote a {
+    color: #1e97c3; }
+  /* line 123, assets/scss/base/_typography.scss */
+  blockquote a:hover {
+    color: #e3e3e3; }
+
+/* line 128, assets/scss/base/_typography.scss */
+cite {
+  color: #777777;
+  font-style: italic; }
+  /* line 132, assets/scss/base/_typography.scss */
+  cite:before {
+    content: '\2014 \00A0'; }
+
+/* Objects
+--------------------------------------------- */
+/* line 140, assets/scss/base/_typography.scss */
+embed,
+iframe,
+img,
+object,
+video,
+.wp-caption {
+  max-width: 100%; }
+
+/* line 149, assets/scss/base/_typography.scss */
+img {
+  margin: 0;
+  max-width: 100%;
+  height: auto; }
+
+/* line 155, assets/scss/base/_typography.scss */
+.featured-content img,
+.gallery img {
+  width: auto; }
+
+/* line 1, assets/scss/base/_forms.scss */
+fieldset {
+  background: #d9d9d9;
+  border: 1px solid silver;
+  margin: 0 0 0.85938em 0;
+  padding: 1.50376%;
+  width: 100%; }
+
+/* line 9, assets/scss/base/_forms.scss */
+::-moz-placeholder {
+  color: #cbe7f1;
+  opacity: 1;
+  font-weight: 400; }
+
+/* line 15, assets/scss/base/_forms.scss */
+::-webkit-input-placeholder {
+  color: #cbe7f1;
+  font-weight: 400; }
+
+/* line 20, assets/scss/base/_forms.scss */
+input,
+label,
+select {
+  display: block;
+  font-family: "proxima-nova", sans-serif;
+  font-size: 1.375em; }
+
+/* line 28, assets/scss/base/_forms.scss */
+label {
+  font-weight: bold;
+  margin-bottom: 0.42969em; }
+  /* line 32, assets/scss/base/_forms.scss */
+  label.required:after {
+    content: "*"; }
+  /* line 36, assets/scss/base/_forms.scss */
+  label abbr {
+    display: none; }
+
+/* line 41, assets/scss/base/_forms.scss */
+textarea,
+input[type="email"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="url"], input[type="color"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="month"], input[type="time"], input[type="week"],
+select[multiple=multiple] {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: border-color;
+  transition: border-color;
+  background-color: white;
+  border-radius: 0.1875em;
+  border: 1px solid silver;
+  -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06);
+          box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06);
+  font-family: "proxima-nova", sans-serif;
+  font-size: 1.375em;
+  margin-bottom: 0.85938em;
+  padding: 0.57292em 0.57292em;
+  width: 100%; }
+  /* line 56, assets/scss/base/_forms.scss */
+  textarea:hover,
+  input[type="email"]:hover, input[type="number"]:hover, input[type="password"]:hover, input[type="search"]:hover, input[type="tel"]:hover, input[type="text"]:hover, input[type="url"]:hover, input[type="color"]:hover, input[type="date"]:hover, input[type="datetime"]:hover, input[type="datetime-local"]:hover, input[type="month"]:hover, input[type="time"]:hover, input[type="week"]:hover,
+  select[multiple=multiple]:hover {
+    border-color: #a6a6a6; }
+  /* line 60, assets/scss/base/_forms.scss */
+  textarea:focus,
+  input[type="email"]:focus, input[type="number"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="text"]:focus, input[type="url"]:focus, input[type="color"]:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="month"]:focus, input[type="time"]:focus, input[type="week"]:focus,
+  select[multiple=multiple]:focus {
+    border-color: #1e97c3;
+    -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06), 0 0 5px rgba(27, 134, 173, 0.7);
+            box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06), 0 0 5px rgba(27, 134, 173, 0.7);
+    outline: none; }
+
+/* line 67, assets/scss/base/_forms.scss */
+textarea {
+  resize: vertical; }
+
+/* line 71, assets/scss/base/_forms.scss */
+input[type="search"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none; }
+
+/* line 75, assets/scss/base/_forms.scss */
+input[type="checkbox"], input[type="image"], input[type="radio"] {
+  width: auto;
+  display: inline;
+  margin-right: 0.42969em; }
+
+/* line 81, assets/scss/base/_forms.scss */
+input[type="file"] {
+  margin-bottom: 0.85938em;
+  padding-bottom: 0.57292em;
+  width: 100%; }
+
+/* line 87, assets/scss/base/_forms.scss */
+select {
+  width: auto;
+  max-width: 100%;
+  margin-bottom: 1.71875em; }
+
+/* line 93, assets/scss/base/_forms.scss */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button {
+  display: none; }
+
+/* line 1, assets/scss/base/_tables.scss */
+table {
+  border-collapse: collapse;
+  margin: 0.85938em 0;
+  table-layout: fixed;
+  width: 100%; }
+
+/* line 8, assets/scss/base/_tables.scss */
+th {
+  border-bottom: 1px solid #9a9a9a;
+  font-weight: bold;
+  padding: 0.85938em 0;
+  text-align: left; }
+
+/* line 15, assets/scss/base/_tables.scss */
+td {
+  border-bottom: 1px solid silver;
+  padding: 0.85938em 0; }
+
+/* line 20, assets/scss/base/_tables.scss */
+tr, td, th {
+  vertical-align: middle; }
+
+/* line 1, assets/scss/base/_lists.scss */
+ul, ol {
+  margin: 0 0 1.71875em 3.4375em;
+  padding: 0; }
+/* line 18, assets/scss/base/_lists.scss */
+dl {
+  margin-bottom: 0.85938em; }
+  /* line 21, assets/scss/base/_lists.scss */
+  dl dt {
+    font-weight: bold;
+    margin-top: 0.85938em; }
+  /* line 26, assets/scss/base/_lists.scss */
+  dl dd {
+    margin: 0; }
+
+/* line 1, assets/scss/base/_buttons.scss */
+button,
+.button,
+input[type="submit"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  border: none;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  padding: 1.0605em 1.7675em; }
+
+/*
+Structure and Layout
+----------------------------------------------------------------------------- */
+/* ## Site Containers
+--------------------------------------------- */
+/* line 4, assets/scss/base/_structure-layout.scss */
+.site-inner {
+  max-width: 100em;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0; }
+  /* line 15, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/bourbon/bourbon/app/assets/stylesheets/bourbon/addons/_clearfix.scss */
+  .site-inner:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+/* ## Column Widths and Positions
+--------------------------------------------- */
+/* ### Wrapping div for .content and .sidebar-primary */
+/* line 14, assets/scss/base/_structure-layout.scss */
+.content-sidebar-sidebar .content-sidebar-wrap,
+.sidebar-content-sidebar .content-sidebar-wrap,
+.sidebar-sidebar-content .content-sidebar-wrap {
+  float: left;
+  display: block;
+  margin-right: 1.50376%;
+  width: 6.95489%; }
+  /* line 38, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/neat/neat/grid/_span-columns.scss */
+  .content-sidebar-sidebar .content-sidebar-wrap:last-child,
+  .sidebar-content-sidebar .content-sidebar-wrap:last-child,
+  .sidebar-sidebar-content .content-sidebar-wrap:last-child {
+    margin-right: 0; }
+
+/* line 20, assets/scss/base/_structure-layout.scss */
+.content-sidebar .content-sidebar-wrap,
+.sidebar-content .content-sidebar-wrap {
+  width: 100%; }
+
+/* ### Content */
+/* line 27, assets/scss/base/_structure-layout.scss */
+.content-sidebar-sidebar .content,
+.sidebar-content-sidebar .content,
+.sidebar-sidebar-content .content {
+  width: 100%;
+  padding: 1.50376%; }
+
+/* line 34, assets/scss/base/_structure-layout.scss */
+.content-sidebar .content,
+.sidebar-content .content {
+  width: 100%;
+  padding: 1.50376%; }
+
+/* line 40, assets/scss/base/_structure-layout.scss */
+.full-width-content .content {
+  width: 100%;
+  padding: 1.50376% 13%; }
+
+/* ### Primary Sidebar */
+/* line 47, assets/scss/base/_structure-layout.scss */
+.content-sidebar-sidebar .sidebar-primary,
+.sidebar-content-sidebar .sidebar-primary,
+.sidebar-sidebar-content .sidebar-primary {
+  width: 100%; }
+
+/* line 53, assets/scss/base/_structure-layout.scss */
+.sidebar-primary {
+  width: 100%;
+  padding: 1.50376%; }
+
+/* ### Secondary Sidebar */
+/* line 60, assets/scss/base/_structure-layout.scss */
+.sidebar-secondary {
+  width: 100%;
+  padding: 1.50376%; }
+
+/*
+Common Classes
+----------------------------------------------------------------------------- */
+/* Avatar
+--------------------------------------------- */
+/* line 4, assets/scss/base/_common-classes.scss */
+.avatar {
+  border-radius: 50%;
+  float: left; }
+
+/* line 9, assets/scss/base/_common-classes.scss */
+.alignleft .avatar,
+.author-box .avatar {
+  margin-right: 24px; }
+
+/* line 14, assets/scss/base/_common-classes.scss */
+.alignright .avatar {
+  margin-left: 24px; }
+
+/* line 18, assets/scss/base/_common-classes.scss */
+.archive .avatar,
+.entry-avatar .avatar {
+  height: 120px;
+  width: 120px; }
+
+/* line 23, assets/scss/base/_common-classes.scss */
+.archive .avatar,
+.entry-avatar .avatar {
+  background-color: white;
+  float: left;
+  padding: 5px;
+  margin: 6% 20px 20px 0; }
+
+/* line 31, assets/scss/base/_common-classes.scss */
+.comment .avatar {
+  margin: 0 20px 24px 0;
+  height: 60px;
+  width: 60px; }
+
+/* Genesis
+--------------------------------------------- */
+/* line 39, assets/scss/base/_common-classes.scss */
+.breadcrumb {
+  margin-bottom: 20px; }
+
+/* Search Form
+--------------------------------------------- */
+/* line 60, assets/scss/base/_common-classes.scss */
+.search-form {
+  overflow: hidden; }
+
+/* line 64, assets/scss/base/_common-classes.scss */
+.site-header .search-form {
+  float: right;
+  margin-top: 12px; }
+
+/* line 69, assets/scss/base/_common-classes.scss */
+.entry-content .search-form,
+.site-header .search-form {
+  width: 50%; }
+
+/* line 74, assets/scss/base/_common-classes.scss */
+.search-form input[type="submit"] {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  position: absolute;
+  width: 1px; }
+
+/* Titles
+--------------------------------------------- */
+/* WordPress
+--------------------------------------------- */
+/* line 114, assets/scss/base/_common-classes.scss */
+.alignleft {
+  float: left;
+  text-align: left; }
+
+/* line 119, assets/scss/base/_common-classes.scss */
+.alignright {
+  float: right;
+  text-align: right; }
+
+/* line 124, assets/scss/base/_common-classes.scss */
+a.alignleft,
+a.alignright {
+  max-width: 100%; }
+
+/* line 129, assets/scss/base/_common-classes.scss */
+img.centered,
+.aligncenter {
+  display: block;
+  margin: 0 auto 24px; }
+
+/* line 135, assets/scss/base/_common-classes.scss */
+img.alignnone,
+.alignnone {
+  margin-bottom: 12px; }
+
+/* line 140, assets/scss/base/_common-classes.scss */
+a.alignleft,
+img.alignleft,
+.wp-caption.alignleft {
+  margin: 0 24px 24px 0; }
+
+/* line 146, assets/scss/base/_common-classes.scss */
+img.alignleft.entry-image {
+  margin: 0; }
+
+/* line 150, assets/scss/base/_common-classes.scss */
+a.alignright,
+img.alignright,
+.wp-caption.alignright {
+  margin: 0 0 24px 24px; }
+
+/* line 156, assets/scss/base/_common-classes.scss */
+.wp-caption-text {
+  font-weight: 700;
+  text-align: center; }
+
+/* line 161, assets/scss/base/_common-classes.scss */
+.entry-content p.wp-caption-text {
+  margin-bottom: 0; }
+
+/* ## Gallery
+--------------------------------------------- */
+/* line 174, assets/scss/base/_common-classes.scss */
+.gallery {
+  overflow: hidden; }
+
+/* line 178, assets/scss/base/_common-classes.scss */
+.gallery-item {
+  float: left;
+  margin: 0 0 28px;
+  text-align: center; }
+
+/* line 184, assets/scss/base/_common-classes.scss */
+.gallery-columns-2 .gallery-item {
+  width: 50%; }
+
+/* line 188, assets/scss/base/_common-classes.scss */
+.gallery-columns-3 .gallery-item {
+  width: 33%; }
+
+/* line 192, assets/scss/base/_common-classes.scss */
+.gallery-columns-4 .gallery-item {
+  width: 25%; }
+
+/* line 196, assets/scss/base/_common-classes.scss */
+.gallery-columns-5 .gallery-item {
+  width: 20%; }
+
+/* line 200, assets/scss/base/_common-classes.scss */
+.gallery-columns-6 .gallery-item {
+  width: 16.6666%; }
+
+/* line 204, assets/scss/base/_common-classes.scss */
+.gallery-columns-7 .gallery-item {
+  width: 14.2857%; }
+
+/* line 208, assets/scss/base/_common-classes.scss */
+.gallery-columns-8 .gallery-item {
+  width: 12.5%; }
+
+/* line 212, assets/scss/base/_common-classes.scss */
+.gallery-columns-9 .gallery-item {
+  width: 11.1111%; }
+
+/* line 216, assets/scss/base/_common-classes.scss */
+.gallery img {
+  border: 1px solid #ddd;
+  height: auto;
+  padding: 4px; }
+
+/* line 222, assets/scss/base/_common-classes.scss */
+.gallery img:hover {
+  border: 1px solid #999; }
+
+/*
+Widgets
+----------------------------------------------------------------------------- */
+/* line 1, assets/scss/base/_widgets.scss */
+.widget {
+  word-wrap: break-word; }
+
+/* line 5, assets/scss/base/_widgets.scss */
+.widget ol > li {
+  list-style-position: inside;
+  list-style-type: decimal;
+  padding-left: 20px;
+  text-indent: -20px; }
+
+/* line 12, assets/scss/base/_widgets.scss */
+.widget li li {
+  border: none;
+  margin: 0 0 0 30px;
+  padding: 0; }
+
+/* line 18, assets/scss/base/_widgets.scss */
+.widget_calendar table {
+  width: 100%; }
+
+/* line 22, assets/scss/base/_widgets.scss */
+.widget_calendar td,
+.widget_calendar th {
+  text-align: center; }
+
+/* Sidebar Widgets
+------------------------------------------------------------ */
+/* line 30, assets/scss/base/_widgets.scss */
+.sidebar.widget-area .widget {
+  margin-top: 80px;
+  margin-bottom: 80px; }
+
+/* Featured Content
+--------------------------------------------- */
+/* line 38, assets/scss/base/_widgets.scss */
+.featured-content .entry {
+  border-bottom: 2px solid silver;
+  margin-bottom: 20px;
+  padding: 0 0 24px; }
+
+/* line 44, assets/scss/base/_widgets.scss */
+.footer-widgets .entry {
+  border-bottom: 1px dotted gray; }
+
+/* line 48, assets/scss/base/_widgets.scss */
+.featured-content .entry-title {
+  font-size: 1.618em; }
+
+/* Genesis Footer Widgets
+--------------------------------------------- */
+/* line 56, assets/scss/base/_widgets.scss */
+.footer-widgets .widget {
+  padding: 1.50376%;
+  width: 100%; }
+
+/* line 61, assets/scss/base/_widgets.scss */
+.footer-widgets a {
+  color: #1e97c3; }
+
+/* line 65, assets/scss/base/_widgets.scss */
+.footer-widgets input {
+  border: 1px solid silver; }
+
+/* line 69, assets/scss/base/_widgets.scss */
+.footer-widgets a.button,
+.footer-widgets a:hover {
+  color: #cbe7f1; }
+
+/* line 74, assets/scss/base/_widgets.scss */
+.footer-widgets li {
+  border-bottom: 1px dotted silver;
+  margin-bottom: 10px;
+  padding-bottom: 10px; }
+
+/*
+Plugins
+----------------------------------------------------------------------------- */
+/* Genesis eNews Extended
+--------------------------------------------- */
+/* line 4, assets/scss/base/_plugins.scss */
+.enews-widget input,
+.enews-widget input:focus {
+  border: 1px solid silver; }
+
+/* line 9, assets/scss/base/_plugins.scss */
+.enews-widget input {
+  font-size: 1.03125em;
+  margin-bottom: 1.414em; }
+
+/* line 14, assets/scss/base/_plugins.scss */
+.enews-widget input[type="submit"] {
+  background-color: #1e97c3;
+  color: white;
+  margin: 0;
+  width: 100%;
+  border: none; }
+
+/* line 22, assets/scss/base/_plugins.scss */
+.enews-widget input:hover[type="submit"] {
+  background-color: #061140;
+  color: #fff; }
+
+/* line 27, assets/scss/base/_plugins.scss */
+.sidebar .widget.enews-widget {
+  background-color: white; }
+
+/* line 31, assets/scss/base/_plugins.scss */
+.enews form + p {
+  margin-top: 2.121em; }
+
+/* line 35, assets/scss/base/_plugins.scss */
+.enews-widget p {
+  color: #061140; }
+
+/* Gravity Forms
+--------------------------------------------- */
+/* line 42, assets/scss/base/_plugins.scss */
+div.gform_wrapper input[type="email"],
+div.gform_wrapper input[type="text"],
+div.gform_wrapper textarea,
+div.gform_wrapper .gform_footer input[type=submit] {
+  width: 100% !important; }
+
+/* line 49, assets/scss/base/_plugins.scss */
+div.gform_wrapper input[type="email"],
+div.gform_wrapper input[type="text"],
+div.gform_wrapper textarea,
+div.gform_wrapper .ginput_complex label {
+  font-size: 1.71875em;
+  padding: 1.414em; }
+
+/* line 57, assets/scss/base/_plugins.scss */
+div.gform_wrapper .ginput_complex label {
+  padding: 0; }
+
+/* line 61, assets/scss/base/_plugins.scss */
+div.gform_wrapper li,
+div.gform_wrapper form li {
+  margin: 1.414em 0 0; }
+
+/* line 66, assets/scss/base/_plugins.scss */
+div.gform_wrapper .gform_footer input[type=submit] {
+  font-size: 1.54em;
+  margin-bottom: 40px;
+  padding: 2.121em; }
+
+/* JetPack
+--------------------------------------------- */
+/* line 75, assets/scss/base/_plugins.scss */
+#wpstats {
+  display: none; }
+
+/*
+Site Header
+----------------------------------------------------------------------------- */
+/* line 1, assets/scss/base/_site-header.scss */
+.site-header {
+  background: transparent;
+  max-width: 100em;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 3.535em; }
+  /* line 15, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/bourbon/bourbon/app/assets/stylesheets/bourbon/addons/_clearfix.scss */
+  .site-header:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+/* line 7, assets/scss/base/_site-header.scss */
+.site-header .wrap {
+  width: 100%; }
+
+/* Title Area
+--------------------------------------------- */
+/* line 14, assets/scss/base/_site-header.scss */
+.title-area {
+  padding: 10px 0;
+  width: 100%; }
+
+/* line 20, assets/scss/base/_site-header.scss */
+.header-full-width .title-area {
+  width: 100%; }
+
+/* line 25, assets/scss/base/_site-header.scss */
+.site-title {
+  font-size: 2.618em;
+  font-weight: 400;
+  line-height: 1.375em;
+  margin: 0; }
+  /* line 31, assets/scss/base/_site-header.scss */
+  .site-title a,
+  .site-title a:hover {
+    color: #061140; }
+
+/* line 37, assets/scss/base/_site-header.scss */
+.header-image .site-title > a {
+  background: url(assets/images/logo.png) no-repeat left;
+  float: left;
+  min-height: 60px;
+  width: 100%; }
+
+/* line 44, assets/scss/base/_site-header.scss */
+.site-description {
+  font-weight: 300;
+  line-height: 1.71875;
+  color: #061140;
+  display: none; }
+
+/* line 51, assets/scss/base/_site-header.scss */
+.site-description,
+.site-title {
+  margin-bottom: 0; }
+
+/* line 57, assets/scss/base/_site-header.scss */
+.header-image .site-description,
+.header-image .site-title {
+  display: block;
+  text-indent: -9999px; }
+
+/* Widget Area
+--------------------------------------------- */
+/* line 67, assets/scss/base/_site-header.scss */
+.site-header .widget-area {
+  text-align: right;
+  width: 100%; }
+
+/*
+Site Navigation
+----------------------------------------------------------------------------- */
+/* line 2, assets/scss/base/_site-navigation.scss */
+.genesis-nav-menu {
+  clear: both;
+  font-size: 16px;
+  line-height: 1;
+  width: 100%; }
+
+/* line 9, assets/scss/base/_site-navigation.scss */
+.genesis-nav-menu .menu-item {
+  display: inline-block;
+  text-align: left; }
+
+/* line 14, assets/scss/base/_site-navigation.scss */
+.genesis-nav-menu a {
+  color: #1e97c3;
+  display: block;
+  padding: 30px 24px; }
+
+/* line 20, assets/scss/base/_site-navigation.scss */
+.genesis-nav-menu a:hover,
+.genesis-nav-menu .current-menu-item > a,
+.genesis-nav-menu .sub-menu .current-menu-item > a:hover {
+  color: #cfedf8; }
+
+/* line 26, assets/scss/base/_site-navigation.scss */
+.genesis-nav-menu .sub-menu {
+  left: -9999px;
+  opacity: 0;
+  position: absolute;
+  -webkit-transition: opacity .4s ease-in-out;
+  transition: opacity .4s ease-in-out;
+  width: 200px;
+  z-index: 99; }
+
+/* line 39, assets/scss/base/_site-navigation.scss */
+.genesis-nav-menu .sub-menu a {
+  background-color: white;
+  border-top: none;
+  font-size: 1.375em;
+  padding: 20px;
+  position: relative;
+  width: 200px; }
+
+/* line 48, assets/scss/base/_site-navigation.scss */
+.genesis-nav-menu .sub-menu .sub-menu {
+  margin: -55px 0 0 199px; }
+
+/* line 52, assets/scss/base/_site-navigation.scss */
+.genesis-nav-menu .menu-item:hover {
+  position: static; }
+
+/* line 56, assets/scss/base/_site-navigation.scss */
+.genesis-nav-menu .menu-item:hover > .sub-menu {
+  left: auto;
+  opacity: 1; }
+
+/* line 61, assets/scss/base/_site-navigation.scss */
+.genesis-nav-menu > .first > a {
+  padding-left: 0; }
+
+/* line 65, assets/scss/base/_site-navigation.scss */
+.genesis-nav-menu > .last > a {
+  padding-right: 0; }
+
+/* line 69, assets/scss/base/_site-navigation.scss */
+.genesis-nav-menu > .right {
+  color: #fff;
+  float: right;
+  list-style-type: none;
+  padding: 30px 0; }
+
+/* line 76, assets/scss/base/_site-navigation.scss */
+.genesis-nav-menu > .right > a {
+  display: inline;
+  padding: 0; }
+
+/* line 81, assets/scss/base/_site-navigation.scss */
+.genesis-nav-menu > .rss > a {
+  margin-left: 48px; }
+
+/* line 85, assets/scss/base/_site-navigation.scss */
+.genesis-nav-menu > .search {
+  padding: 10px 0 0; }
+
+/* ## Site Header Navigation
+--------------------------------------------- */
+/* line 92, assets/scss/base/_site-navigation.scss */
+.site-header .sub-menu {
+  border-top: 0px solid #eee; }
+
+/* line 96, assets/scss/base/_site-navigation.scss */
+.site-header .sub-menu .sub-menu {
+  margin-top: -56px; }
+
+/* line 100, assets/scss/base/_site-navigation.scss */
+.site-header .genesis-nav-menu li li {
+  margin-left: 0; }
+
+/* ## Primary Navigation
+--------------------------------------------- */
+/* line 107, assets/scss/base/_site-navigation.scss */
+.nav-primary {
+  background-color: #333; }
+
+/* line 111, assets/scss/base/_site-navigation.scss */
+.nav-primary .genesis-nav-menu a {
+  color: #fff; }
+
+/* line 115, assets/scss/base/_site-navigation.scss */
+.nav-primary .genesis-nav-menu .sub-menu a {
+  color: #333; }
+
+/* line 119, assets/scss/base/_site-navigation.scss */
+.nav-primary .genesis-nav-menu a:hover,
+.nav-primary .genesis-nav-menu .current-menu-item > a,
+.nav-primary .genesis-nav-menu .sub-menu .current-menu-item > a:hover {
+  color: #e5554e; }
+
+/* ## Secondary Navigation
+--------------------------------------------- */
+/*
+Content Area
+----------------------------------------------------------------------------- */
+/* Home Page
+--------------------------------------------- */
+/* Home Top */
+/* line 6, assets/scss/base/_content-area.scss */
+.home-top-section {
+  color: white;
+  margin-bottom: 20px;
+  text-align: center;
+  width: 100%; }
+
+/* line 13, assets/scss/base/_content-area.scss */
+.home-top-section .wrap {
+  padding: 8% 0;
+  width: 100%; }
+
+/* line 18, assets/scss/base/_content-area.scss */
+.home-top-section .fa {
+  font-size: 96px;
+  margin-bottom: 20px; }
+
+/* line 23, assets/scss/base/_content-area.scss */
+.home-top-title {
+  font-size: 2.443em;
+  font-weight: 700;
+  margin: 0 auto;
+  max-width: 1000px; }
+
+/* line 30, assets/scss/base/_content-area.scss */
+.home-top-description {
+  font-size: 1.333em;
+  margin: 0 auto 50px;
+  width: 100%; }
+
+/* line 36, assets/scss/base/_content-area.scss */
+.banner-button {
+  background-color: #1e97c3; }
+
+/* line 40, assets/scss/base/_content-area.scss */
+.banner-button:hover {
+  background-color: #061140; }
+
+/* Home Grid */
+/* line 46, assets/scss/base/_content-area.scss */
+.grid-section {
+  margin-bottom: 40px;
+  overflow: hidden;
+  width: 100%; }
+
+/* line 52, assets/scss/base/_content-area.scss */
+.grid-item {
+  color: white;
+  float: left;
+  height: 285px;
+  margin: 8px;
+  padding: 40px 60px;
+  text-align: center;
+  width: 100%; }
+
+/* line 62, assets/scss/base/_content-area.scss */
+.grid-item.wide-item {
+  width: 100%; }
+
+/* line 66, assets/scss/base/_content-area.scss */
+.grid-item .fa {
+  font-size: 54px;
+  margin-bottom: 20px; }
+
+/* line 71, assets/scss/base/_content-area.scss */
+.grid-item h2 {
+  font-size: 2.443em;
+  color: white;
+  font-weight: 700;
+  margin-bottom: 10px; }
+
+/* Home Bullet */
+/* line 80, assets/scss/base/_content-area.scss */
+.bullet-section {
+  clear: both;
+  width: 100%; }
+
+/* line 85, assets/scss/base/_content-area.scss */
+.bottom-bullet-point {
+  float: left;
+  width: 100%; }
+
+/* line 90, assets/scss/base/_content-area.scss */
+.bullet-section .fa {
+  border-radius: 30px;
+  color: white;
+  font-size: 30px;
+  left: 0;
+  padding: 12px 0;
+  position: absolute;
+  top: 0;
+  width: 25%; }
+
+/* line 101, assets/scss/base/_content-area.scss */
+.bottom-bullet-title {
+  font-weight: 700; }
+
+/* line 105, assets/scss/base/_content-area.scss */
+.bottom-bullet-title,
+.bottom-bullet-text {
+  padding-left: 76px; }
+
+/* line 110, assets/scss/base/_content-area.scss */
+.full-width-content.gg-home .content {
+  width: 100%;
+  padding: 1.50376% 0; }
+
+/* Content
+--------------------------------------------- */
+/* line 118, assets/scss/base/_content-area.scss */
+.content {
+  padding: 1.50376% 6%; }
+
+/* Entry Meta
+--------------------------------------------- */
+/* line 125, assets/scss/base/_content-area.scss */
+.entry-header {
+  text-align: left; }
+  /* line 128, assets/scss/base/_content-area.scss */
+  .entry-header p.entry-meta {
+    font-family: "alegreya-sc", serif; }
+  /* line 132, assets/scss/base/_content-area.scss */
+  .entry-header a {
+    color: #77cbea; }
+  /* line 136, assets/scss/base/_content-area.scss */
+  .entry-header a:hover {
+    color: #21a8d9; }
+
+/* line 141, assets/scss/base/_content-area.scss */
+.sidebar .entry-header::after {
+  display: none; }
+
+/* line 145, assets/scss/base/_content-area.scss */
+.entry-categories::before,
+.entry-tags::before {
+  display: inline-block;
+  font: normal 20px/1 'dashicons';
+  margin-right: 5px;
+  margin-top: 2px;
+  vertical-align: top;
+  -webkit-font-smoothing: antialiased; }
+
+/* line 155, assets/scss/base/_content-area.scss */
+.entry-categories::before {
+  content: "\f318"; }
+
+/* line 159, assets/scss/base/_content-area.scss */
+.entry-tags::before {
+  content: "\f323"; }
+
+/* line 163, assets/scss/base/_content-area.scss */
+.entry-categories,
+.entry-tags {
+  display: block; }
+
+/* line 168, assets/scss/base/_content-area.scss */
+.entry-comments-link::before {
+  content: "\2014";
+  margin: 0 6px 0 2px; }
+
+/* Entry Title
+--------------------------------------------- */
+/* line 176, assets/scss/base/_content-area.scss */
+.entry-title {
+  font-size: 2.618em;
+  line-height: 1.375em; }
+
+/* Pagination
+--------------------------------------------- */
+/* line 184, assets/scss/base/_content-area.scss */
+.pagination,
+.archive-pagination {
+  text-align: left;
+  margin: 40px 0 60px; }
+  /* line 15, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/bourbon/bourbon/app/assets/stylesheets/bourbon/addons/_clearfix.scss */
+  .pagination:after,
+  .archive-pagination:after {
+    content: "";
+    display: table;
+    clear: both; }
+  /* line 194, assets/scss/base/_content-area.scss */
+  .pagination ul,
+  .archive-pagination ul {
+    display: inline;
+    text-align: center; }
+    /* line 15, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/bourbon/bourbon/app/assets/stylesheets/bourbon/addons/_clearfix.scss */
+    .pagination ul:after,
+    .archive-pagination ul:after {
+      content: "";
+      display: table;
+      clear: both; }
+    /* line 199, assets/scss/base/_content-area.scss */
+    .pagination ul li,
+    .archive-pagination ul li {
+      display: inline; }
+    /* line 203, assets/scss/base/_content-area.scss */
+    .pagination ul ul li,
+    .archive-pagination ul ul li {
+      display: none; }
+      /* line 206, assets/scss/base/_content-area.scss */
+      .pagination ul ul li:nth-child(1), .pagination ul ul li:nth-child(2), .pagination ul ul li:nth-child(3),
+      .archive-pagination ul ul li:nth-child(1),
+      .archive-pagination ul ul li:nth-child(2),
+      .archive-pagination ul ul li:nth-child(3) {
+        display: inline; }
+    /* line 214, assets/scss/base/_content-area.scss */
+    .pagination ul li a,
+    .archive-pagination ul li a {
+      -webkit-transition: all 0.2s ease-in-out;
+      transition: all 0.2s ease-in-out;
+      background: #061140;
+      border-radius: 0.1875em;
+      padding: 8px 12px 12px;
+      color: white; }
+      /* line 221, assets/scss/base/_content-area.scss */
+      .pagination ul li a:hover, .pagination ul li a:focus,
+      .archive-pagination ul li a:hover,
+      .archive-pagination ul li a:focus {
+        background: #1e97c3;
+        color: white; }
+      /* line 227, assets/scss/base/_content-area.scss */
+      .pagination ul li a:active,
+      .archive-pagination ul li a:active {
+        background: #061140; }
+
+/* Comments
+--------------------------------------------- */
+/* line 237, assets/scss/base/_content-area.scss */
+.comment-respond,
+.entry-comments,
+.entry-pings {
+  background-color: #fff;
+  margin-bottom: 40px;
+  max-width: 100em;
+  margin-left: auto;
+  margin-right: auto; }
+  /* line 15, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/bourbon/bourbon/app/assets/stylesheets/bourbon/addons/_clearfix.scss */
+  .comment-respond:after,
+  .entry-comments:after,
+  .entry-pings:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+/* line 245, assets/scss/base/_content-area.scss */
+.comment-respond,
+.entry-pings {
+  padding: 20px 20px 8px 0; }
+
+/* line 250, assets/scss/base/_content-area.scss */
+.entry-comments {
+  padding: 1.50376%; }
+
+/* line 258, assets/scss/base/_content-area.scss */
+li.comment {
+  margin-left: -8.45865%;
+  list-style-type: none; }
+
+/* line 263, assets/scss/base/_content-area.scss */
+.comment-content {
+  clear: both; }
+
+/* line 267, assets/scss/base/_content-area.scss */
+.comment-list li {
+  padding: 1.50376%; }
+
+/* line 271, assets/scss/base/_content-area.scss */
+.comment-list li li {
+  margin-left: -8.45865%; }
+
+/* line 275, assets/scss/base/_content-area.scss */
+.comment-respond input[type="email"],
+.comment-respond input[type="text"],
+.comment-respond input[type="url"] {
+  width: 50%; }
+
+/* line 281, assets/scss/base/_content-area.scss */
+.comment-respond label {
+  display: block;
+  margin-right: 12px; }
+
+/* line 286, assets/scss/base/_content-area.scss */
+.entry-comments .comment-author {
+  margin-bottom: 0; }
+
+/* line 290, assets/scss/base/_content-area.scss */
+.entry-comments .comment-meta {
+  font-family: "alegreya-sc", serif; }
+
+/* line 294, assets/scss/base/_content-area.scss */
+.entry-pings .reply {
+  display: none; }
+
+/* line 301, assets/scss/base/_content-area.scss */
+.form-allowed-tags {
+  background-color: #ECF4F9;
+  padding: 1.50376%; }
+
+/*
+Sidebars
+----------------------------------------------------------------------------- */
+/* line 1, assets/scss/base/_sidebars.scss */
+.sidebar {
+  padding: 1.50376%; }
+  /* line 4, assets/scss/base/_sidebars.scss */
+  .sidebar h4,
+  .sidebar .widget-title {
+    font-size: 32.38095px; }
+  /* line 9, assets/scss/base/_sidebars.scss */
+  .sidebar p {
+    font-size: 20px; }
+  /* line 13, assets/scss/base/_sidebars.scss */
+  .sidebar li {
+    border-bottom: 1px dotted silver;
+    margin-bottom: 10px;
+    padding-bottom: 10px; }
+  /* line 19, assets/scss/base/_sidebars.scss */
+  .sidebar p:last-child,
+  .sidebar ul > li:last-child,
+  .sidebar .widget:last-child {
+    margin-bottom: 0; }
+  /* line 25, assets/scss/base/_sidebars.scss */
+  .sidebar .widget {
+    background-color: white;
+    display: block; }
+    /* line 15, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/bourbon/bourbon/app/assets/stylesheets/bourbon/addons/_clearfix.scss */
+    .sidebar .widget:after {
+      content: "";
+      display: table;
+      clear: both; }
+
+/*
+Site Footer
+----------------------------------------------------------------------------- */
+/* line 1, assets/scss/base/_site-footer.scss */
+.site-footer {
+  background-color: #061140;
+  line-height: 1.71875;
+  text-align: center;
+  color: white;
+  padding: 4% 0; }
+  /* line 12, assets/scss/base/_site-footer.scss */
+  .site-footer p {
+    margin-bottom: 0; }
+  /* line 16, assets/scss/base/_site-footer.scss */
+  .site-footer a {
+    color: silver; }
+  /* line 20, assets/scss/base/_site-footer.scss */
+  .site-footer a:hover {
+    color: #1e97c3; }
+
+/* line 25, assets/scss/base/_site-footer.scss */
+.footer-widgets {
+  background-color: white;
+  clear: both;
+  color: #061140;
+  max-width: 100em;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 6%; }
+  /* line 15, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/bourbon/bourbon/app/assets/stylesheets/bourbon/addons/_clearfix.scss */
+  .footer-widgets:after {
+    content: "";
+    display: table;
+    clear: both; }
+  /* line 32, assets/scss/base/_site-footer.scss */
+  .footer-widgets .widget-title {
+    color: #061140; }
+
+/*
+Refills
+----------------------------------------------------------------------------- */
+/*
+Media Queries (Responsive Design Break Points)
+----------------------------------------------------------------------------- */
+@media screen and (min-width: 401px) {
+  /* line 2, assets/scss/base/_media-queries.scss */
+  body {
+    font-size: 1.0em; } }
+@media screen and (min-width: 801px) {
+  /* line 8, assets/scss/base/_media-queries.scss */
+  body {
+    font-size: 1.242em; }
+
+  /* Site Header
+  --------------------------------------------- */
+  /* line 14, assets/scss/base/_media-queries.scss */
+  .site-header .wrap {
+    float: left;
+    display: block;
+    margin-right: 1.50376%;
+    width: 100%;
+    display: table;
+    width: 100%;
+    table-layout: fixed; }
+    /* line 38, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/neat/neat/grid/_span-columns.scss */
+    .site-header .wrap:last-child {
+      margin-right: 0; }
+    /* line 15, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/bourbon/bourbon/app/assets/stylesheets/bourbon/addons/_clearfix.scss */
+    .site-header .wrap:after {
+      content: "";
+      display: table;
+      clear: both; }
+
+  /* Title Area
+  --------------------------------------------- */
+  /* line 22, assets/scss/base/_media-queries.scss */
+  .title-area {
+    padding: 10px 0;
+    display: table-cell;
+    width: 41.66667%; }
+
+  /* line 28, assets/scss/base/_media-queries.scss */
+  .header-full-width .title-area {
+    width: 100%; }
+
+  /* Widget Area
+  --------------------------------------------- */
+  /* line 36, assets/scss/base/_media-queries.scss */
+  .site-header .widget-area {
+    text-align: right;
+    display: table-cell;
+    width: 58.33333%;
+    padding: 1.50376%; }
+
+  /* ### Footer Widgets */
+  /* line 45, assets/scss/base/_media-queries.scss */
+  .footer-widgets .widget {
+    padding: 1.50376%;
+    float: left;
+    display: block;
+    margin-right: 1.50376%;
+    width: 32.33083%;
+    margin-right: 0; }
+    /* line 38, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/neat/neat/grid/_span-columns.scss */
+    .footer-widgets .widget:last-child {
+      margin-right: 0; }
+    /* line 52, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/neat/neat/grid/_omega.scss */
+    .footer-widgets .widget .nth-widget:nth-child(3n) {
+      margin-right: 0; }
+    /* line 57, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/neat/neat/grid/_omega.scss */
+    .footer-widgets .widget .nth-widget:nth-child(3n+1) {
+      clear: left; }
+
+  /* Comments
+  --------------------------------------------- */
+  /* line 59, assets/scss/base/_media-queries.scss */
+  .comment-respond,
+  .entry-comments,
+  .entry-pings {
+    background-color: #fff;
+    margin-bottom: 40px;
+    max-width: 100em;
+    margin-left: auto;
+    margin-right: auto; }
+    /* line 15, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/bourbon/bourbon/app/assets/stylesheets/bourbon/addons/_clearfix.scss */
+    .comment-respond:after,
+    .entry-comments:after,
+    .entry-pings:after {
+      content: "";
+      display: table;
+      clear: both; }
+
+  /* line 67, assets/scss/base/_media-queries.scss */
+  .comment-respond,
+  .entry-pings {
+    padding: 40px 40px 16px 0; }
+
+  /* line 72, assets/scss/base/_media-queries.scss */
+  .entry-comments {
+    padding: 40px; }
+
+  /* line 80, assets/scss/base/_media-queries.scss */
+  li.comment {
+    margin-left: -8.45865%; }
+
+  /* line 84, assets/scss/base/_media-queries.scss */
+  .comment-content {
+    clear: both; }
+
+  /* line 88, assets/scss/base/_media-queries.scss */
+  .comment-list li {
+    padding: 32px; }
+
+  /* line 92, assets/scss/base/_media-queries.scss */
+  .comment-list li li {
+    margin-left: 8.45865%; }
+
+  /* line 96, assets/scss/base/_media-queries.scss */
+  .comment-respond input[type="email"],
+  .comment-respond input[type="text"],
+  .comment-respond input[type="url"] {
+    width: 50%; }
+
+  /* line 102, assets/scss/base/_media-queries.scss */
+  .comment-respond label {
+    display: block;
+    margin-right: 12px; }
+
+  /* line 107, assets/scss/base/_media-queries.scss */
+  .entry-comments .comment-author {
+    margin-bottom: 0; }
+
+  /* line 111, assets/scss/base/_media-queries.scss */
+  .entry-comments .comment-meta {
+    font-family: "alegreya-sc", serif; }
+
+  /* line 115, assets/scss/base/_media-queries.scss */
+  .entry-pings .reply {
+    display: none; }
+
+  /* line 122, assets/scss/base/_media-queries.scss */
+  .form-allowed-tags {
+    background-color: #ECF4F9;
+    padding: 1.71875em; } }
+@media screen and (min-width: 1201px) {
+  /* line 130, assets/scss/base/_media-queries.scss */
+  body {
+    font-size: 1.375em; }
+
+  /* ## Genesis Nav Menu
+  --------------------------------------------- */
+  /* line 137, assets/scss/base/_media-queries.scss */
+  .genesis-nav-menu {
+    clear: both;
+    line-height: 1;
+    width: 100%; }
+
+  /* line 143, assets/scss/base/_media-queries.scss */
+  .genesis-nav-menu .menu-item {
+    display: inline-block;
+    text-align: left; }
+
+  /* line 148, assets/scss/base/_media-queries.scss */
+  .genesis-nav-menu a {
+    color: #333333;
+    display: block;
+    padding: 30px 24px; }
+
+  /* line 154, assets/scss/base/_media-queries.scss */
+  .genesis-nav-menu a:hover,
+  .genesis-nav-menu .current-menu-item > a,
+  .genesis-nav-menu .sub-menu .current-menu-item > a:hover {
+    color: #1e97c3; }
+
+  /* line 160, assets/scss/base/_media-queries.scss */
+  .genesis-nav-menu .sub-menu {
+    left: -9999px;
+    opacity: 0;
+    position: absolute;
+    -webkit-transition: opacity .4s ease-in-out;
+    transition: opacity .4s ease-in-out;
+    width: 200px;
+    z-index: 99; }
+
+  /* line 173, assets/scss/base/_media-queries.scss */
+  .genesis-nav-menu .sub-menu a {
+    background-color: white;
+    border: 1px solid silver;
+    border-top: none;
+    padding: 20px;
+    position: relative;
+    width: 200px; }
+
+  /* line 182, assets/scss/base/_media-queries.scss */
+  .genesis-nav-menu .sub-menu .sub-menu {
+    margin: -55px 0 0 199px; }
+
+  /* line 186, assets/scss/base/_media-queries.scss */
+  .genesis-nav-menu .menu-item:hover {
+    position: static; }
+
+  /* line 190, assets/scss/base/_media-queries.scss */
+  .genesis-nav-menu .menu-item:hover > .sub-menu {
+    left: auto;
+    opacity: 1; }
+
+  /* line 195, assets/scss/base/_media-queries.scss */
+  .genesis-nav-menu > .first > a {
+    padding-left: 0; }
+
+  /* line 199, assets/scss/base/_media-queries.scss */
+  .genesis-nav-menu > .last > a {
+    padding-right: 0; }
+
+  /* line 203, assets/scss/base/_media-queries.scss */
+  .genesis-nav-menu > .right {
+    color: white;
+    float: right;
+    list-style-type: none;
+    padding: 30px 0; }
+
+  /* line 210, assets/scss/base/_media-queries.scss */
+  .genesis-nav-menu > .right > a {
+    display: inline;
+    padding: 0; }
+
+  /* line 215, assets/scss/base/_media-queries.scss */
+  .genesis-nav-menu > .rss > a {
+    margin-left: 48px; }
+
+  /* line 219, assets/scss/base/_media-queries.scss */
+  .genesis-nav-menu > .search {
+    padding: 10px 0 0; }
+
+  /* ## Site Header Navigation
+  --------------------------------------------- */
+  /* line 226, assets/scss/base/_media-queries.scss */
+  .site-header .sub-menu {
+    border-top: 1px solid silver; }
+
+  /* line 230, assets/scss/base/_media-queries.scss */
+  .site-header .sub-menu .sub-menu {
+    margin-top: -56px; }
+
+  /* line 234, assets/scss/base/_media-queries.scss */
+  .site-header .genesis-nav-menu li li {
+    margin-left: 0; }
+
+  /* ## Primary Navigation
+  --------------------------------------------- */
+  /* line 241, assets/scss/base/_media-queries.scss */
+  .nav-primary {
+    background-color: #cbe7f1; }
+
+  /* line 245, assets/scss/base/_media-queries.scss */
+  .nav-primary .genesis-nav-menu a {
+    color: white; }
+
+  /* line 249, assets/scss/base/_media-queries.scss */
+  .nav-primary .genesis-nav-menu .sub-menu a {
+    color: #1e97c3; }
+
+  /* line 253, assets/scss/base/_media-queries.scss */
+  .nav-primary .genesis-nav-menu a:hover,
+  .nav-primary .genesis-nav-menu .current-menu-item > a,
+  .nav-primary .genesis-nav-menu .sub-menu .current-menu-item > a:hover {
+    color: #60c3e7; }
+
+  /* ## Secondary Navigation
+  --------------------------------------------- */
+  /* line 262, assets/scss/base/_media-queries.scss */
+  .nav-secondary {
+    background-color: white; }
+
+  /* Home Page
+  --------------------------------------------- */
+  /* line 269, assets/scss/base/_media-queries.scss */
+  .gg-home .site-container {
+    background: white; }
+
+  /* Home Top */
+  /* line 275, assets/scss/base/_media-queries.scss */
+  .row-1 {
+    color: white;
+    margin-bottom: 20px;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 20%; }
+    /* line 282, assets/scss/base/_media-queries.scss */
+    .row-1 .wrap {
+      padding-top: 8%;
+      display: block; }
+      /* line 15, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/bourbon/bourbon/app/assets/stylesheets/bourbon/addons/_clearfix.scss */
+      .row-1 .wrap:after {
+        content: "";
+        display: table;
+        clear: both; }
+    /* line 287, assets/scss/base/_media-queries.scss */
+    .row-1 .fa {
+      font-size: 96px;
+      margin-bottom: 20px; }
+    /* line 292, assets/scss/base/_media-queries.scss */
+    .row-1 h2 {
+      font-size: 3.257em;
+      font-weight: 700;
+      float: left;
+      display: block;
+      margin-right: 1.50376%;
+      width: 49.24812%;
+      margin-left: 25.37594%;
+      text-align: center; }
+      /* line 38, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/neat/neat/grid/_span-columns.scss */
+      .row-1 h2:last-child {
+        margin-right: 0; }
+    /* line 300, assets/scss/base/_media-queries.scss */
+    .row-1 p {
+      font-size: 1.333em;
+      float: left;
+      display: block;
+      margin-right: 1.50376%;
+      width: 49.24812%;
+      margin-left: 25.37594%;
+      text-align: center; }
+      /* line 38, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/neat/neat/grid/_span-columns.scss */
+      .row-1 p:last-child {
+        margin-right: 0; }
+    /* line 307, assets/scss/base/_media-queries.scss */
+    .row-1 .row-1-button {
+      float: left;
+      display: block;
+      margin-right: 1.50376%;
+      width: 49.24812%;
+      margin-left: 25.37594%; }
+      /* line 38, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/neat/neat/grid/_span-columns.scss */
+      .row-1 .row-1-button:last-child {
+        margin-right: 0; }
+    /* line 312, assets/scss/base/_media-queries.scss */
+    .row-1 .banner-button {
+      background-color: #1e97c3; }
+    /* line 316, assets/scss/base/_media-queries.scss */
+    .row-1 .banner-button:hover {
+      background-color: #061140; }
+
+  /* Home Grid */
+  /* line 323, assets/scss/base/_media-queries.scss */
+  .row-2 {
+    overflow: hidden;
+    display: block;
+    margin-bottom: 10%;
+    margin-right: 0; }
+    /* line 15, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/bourbon/bourbon/app/assets/stylesheets/bourbon/addons/_clearfix.scss */
+    .row-2:after {
+      content: "";
+      display: table;
+      clear: both; }
+    /* line 329, assets/scss/base/_media-queries.scss */
+    .row-2 .grid-item {
+      color: white;
+      float: left;
+      height: 285px;
+      margin: 8px;
+      padding: 40px 60px;
+      text-align: center;
+      float: left;
+      display: block;
+      margin-right: 1.50376%;
+      width: 32.33083%; }
+      /* line 38, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/neat/neat/grid/_span-columns.scss */
+      .row-2 .grid-item:last-child {
+        margin-right: 0; }
+    /* line 339, assets/scss/base/_media-queries.scss */
+    .row-2 .grid-item.wide-item {
+      float: left;
+      display: block;
+      margin-right: 1.50376%;
+      width: 66.16541%; }
+      /* line 38, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/neat/neat/grid/_span-columns.scss */
+      .row-2 .grid-item.wide-item:last-child {
+        margin-right: 0; }
+    /* line 343, assets/scss/base/_media-queries.scss */
+    .row-2 .grid-item .fa {
+      font-size: 54px;
+      margin-bottom: 20px; }
+    /* line 348, assets/scss/base/_media-queries.scss */
+    .row-2 .grid-item h2 {
+      color: white;
+      font-weight: 700;
+      margin-bottom: 10px; }
+
+  /* Home Bullet */
+  /* line 361, assets/scss/base/_media-queries.scss */
+  .gg-home .row-3 {
+    clear: both;
+    display: block; }
+    /* line 15, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/bourbon/bourbon/app/assets/stylesheets/bourbon/addons/_clearfix.scss */
+    .gg-home .row-3:after {
+      content: "";
+      display: table;
+      clear: both; }
+    /* line 365, assets/scss/base/_media-queries.scss */
+    .gg-home .row-3 .bullet-point-section {
+      float: left;
+      float: left;
+      display: block;
+      margin-right: 1.50376%;
+      width: 32.33083%; }
+      /* line 38, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/neat/neat/grid/_span-columns.scss */
+      .gg-home .row-3 .bullet-point-section:last-child {
+        margin-right: 0; }
+      /* line 52, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/neat/neat/grid/_omega.scss */
+      .gg-home .row-3 .bullet-point-section:nth-child(3n) {
+        margin-right: 0; }
+      /* line 57, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/neat/neat/grid/_omega.scss */
+      .gg-home .row-3 .bullet-point-section:nth-child(3n+1) {
+        clear: left; }
+    /* line 371, assets/scss/base/_media-queries.scss */
+    .gg-home .row-3 .bulleted-point {
+      float: left;
+      color: white;
+      width: 21.51163%; }
+      /* line 376, assets/scss/base/_media-queries.scss */
+      .gg-home .row-3 .bulleted-point .fa {
+        border-radius: 50%;
+        font-size: 3.157em;
+        padding: 15%; }
+    /* line 383, assets/scss/base/_media-queries.scss */
+    .gg-home .row-3 .bullet-text {
+      float: left;
+      width: 73.83721%; }
+
+  /* ## Site Containers
+  --------------------------------------------- */
+  /* line 391, assets/scss/base/_media-queries.scss */
+  .site-inner {
+    max-width: 100em;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0; }
+    /* line 15, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/bourbon/bourbon/app/assets/stylesheets/bourbon/addons/_clearfix.scss */
+    .site-inner:after {
+      content: "";
+      display: table;
+      clear: both; }
+
+  /* line 396, assets/scss/base/_media-queries.scss */
+  .content {
+    padding: 1.50376% 13%; }
+
+  /* ## Column Widths and Positions
+  --------------------------------------------- */
+  /* ### Wrapping div for .content and .sidebar-primary */
+  /* line 405, assets/scss/base/_media-queries.scss */
+  .content-sidebar-sidebar .content-sidebar-wrap,
+  .sidebar-content-sidebar .content-sidebar-wrap,
+  .sidebar-sidebar-content .content-sidebar-wrap {
+    float: left;
+    display: block;
+    margin-right: 1.50376%;
+    width: 83.08271%; }
+    /* line 38, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/neat/neat/grid/_span-columns.scss */
+    .content-sidebar-sidebar .content-sidebar-wrap:last-child,
+    .sidebar-content-sidebar .content-sidebar-wrap:last-child,
+    .sidebar-sidebar-content .content-sidebar-wrap:last-child {
+      margin-right: 0; }
+
+  /* line 411, assets/scss/base/_media-queries.scss */
+  .content-sidebar .content-sidebar-wrap,
+  .sidebar-content .content-sidebar-wrap {
+    width: 100%; }
+
+  /* ### Content */
+  /* line 418, assets/scss/base/_media-queries.scss */
+  .content-sidebar-sidebar .content,
+  .sidebar-content-sidebar .content,
+  .sidebar-sidebar-content .content {
+    float: left;
+    display: block;
+    margin-right: 1.80995%;
+    width: 59.27602%;
+    padding: 1.50376%; }
+    /* line 38, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/neat/neat/grid/_span-columns.scss */
+    .content-sidebar-sidebar .content:last-child,
+    .sidebar-content-sidebar .content:last-child,
+    .sidebar-sidebar-content .content:last-child {
+      margin-right: 0; }
+
+  /* line 425, assets/scss/base/_media-queries.scss */
+  .content-sidebar .content,
+  .sidebar-content .content {
+    float: left;
+    display: block;
+    margin-right: 1.50376%;
+    width: 66.16541%;
+    padding: 1.50376%; }
+    /* line 38, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/neat/neat/grid/_span-columns.scss */
+    .content-sidebar .content:last-child,
+    .sidebar-content .content:last-child {
+      margin-right: 0; }
+
+  /* line 431, assets/scss/base/_media-queries.scss */
+  .full-width-content .content {
+    width: 100%;
+    padding: 1.50376% 13%; }
+
+  /* ### Primary Sidebar */
+  /* line 438, assets/scss/base/_media-queries.scss */
+  .content-sidebar-sidebar .sidebar-primary,
+  .sidebar-content-sidebar .sidebar-primary,
+  .sidebar-sidebar-content .sidebar-primary {
+    float: left;
+    display: block;
+    margin-right: 1.80995%;
+    width: 38.91403%; }
+    /* line 38, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/neat/neat/grid/_span-columns.scss */
+    .content-sidebar-sidebar .sidebar-primary:last-child,
+    .sidebar-content-sidebar .sidebar-primary:last-child,
+    .sidebar-sidebar-content .sidebar-primary:last-child {
+      margin-right: 0; }
+
+  /* line 444, assets/scss/base/_media-queries.scss */
+  .sidebar-primary {
+    float: left;
+    display: block;
+    margin-right: 1.50376%;
+    width: 32.33083%;
+    padding: 1.50376%; }
+    /* line 38, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/neat/neat/grid/_span-columns.scss */
+    .sidebar-primary:last-child {
+      margin-right: 0; }
+
+  /* ### Secondary Sidebar */
+  /* line 451, assets/scss/base/_media-queries.scss */
+  .sidebar-secondary {
+    float: left;
+    display: block;
+    margin-right: 1.50376%;
+    width: 15.41353%;
+    padding: 1.50376%; }
+    /* line 38, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/neat/neat/grid/_span-columns.scss */
+    .sidebar-secondary:last-child {
+      margin-right: 0; } }

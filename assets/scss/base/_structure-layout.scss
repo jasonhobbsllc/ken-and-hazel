@@ -1,0 +1,63 @@
+/* ## Site Containers
+--------------------------------------------- */
+
+.site-inner {
+	@include outer-container;
+	@include pad(0);
+}
+
+/* ## Column Widths and Positions
+--------------------------------------------- */
+
+/* ### Wrapping div for .content and .sidebar-primary */
+
+.content-sidebar-sidebar .content-sidebar-wrap,
+.sidebar-content-sidebar .content-sidebar-wrap,
+.sidebar-sidebar-content .content-sidebar-wrap {
+	@include span-columns(1);
+}
+
+.content-sidebar .content-sidebar-wrap,
+.sidebar-content .content-sidebar-wrap {
+	@include fill-parent;
+}
+
+/* ### Content */
+
+.content-sidebar-sidebar .content,
+.sidebar-content-sidebar .content,
+.sidebar-sidebar-content .content {
+	@include fill-parent;
+	@include pad;
+}
+
+.content-sidebar .content,
+.sidebar-content .content {
+	@include fill-parent;
+	@include pad;
+}
+
+.full-width-content .content {
+	@include fill-parent;
+	@include pad(default 13%);
+}
+
+/* ### Primary Sidebar */
+
+.content-sidebar-sidebar .sidebar-primary,
+.sidebar-content-sidebar .sidebar-primary,
+.sidebar-sidebar-content .sidebar-primary {
+	@include fill-parent;
+}
+
+.sidebar-primary {
+	@include fill-parent;
+	@include pad;
+}
+
+/* ### Secondary Sidebar */
+
+.sidebar-secondary {
+	@include fill-parent;
+	@include pad;
+}

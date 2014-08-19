@@ -1,0 +1,29 @@
+.sidebar {
+	@include pad;
+
+	h4,
+	.widget-title {
+		font-size: modular-scale(34px, -1, 1.05);
+	}
+
+	p {
+		font-size: modular-scale(21px, -1, 1.05);
+	}
+
+	li {
+		border-bottom: 1px dotted $base-border-color;
+		margin-bottom: 10px;
+		padding-bottom: 10px;
+	}
+
+	p:last-child,
+	ul > li:last-child,
+	.widget:last-child {
+		margin-bottom: 0;
+	}
+
+	.widget {
+		background-color: $light;
+		@include row;
+	}
+}

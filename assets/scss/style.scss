@@ -1,0 +1,85 @@
+/*
+	Theme Name: Ken and Hazel Hobbs
+	Description: Foundation for building design bases for GG Solutions.
+	Author: Jason Hobbs, LLC
+	Author URI: http://genesisgoodies.com/
+	Version: 0.1.0
+
+	Tags: white, one-column, two-columns
+
+	Template: genesis
+	Template Version: 2.1.1
+
+	License: GPL-2.0+
+	License URI: http://www.opensource.org/licenses/gpl-license.php
+*/
+
+@import "bourbon/bourbon";
+@import "base/reset";
+@import "base/grid-settings";
+@import "neat/neat";
+@import "base/base";
+
+/*
+Structure and Layout
+----------------------------------------------------------------------------- */
+@import "base/structure-layout";
+
+
+/*
+Common Classes
+----------------------------------------------------------------------------- */
+@import "base/common-classes";
+
+
+/*
+Widgets
+----------------------------------------------------------------------------- */
+@import "base/widgets";
+
+
+/*
+Plugins
+----------------------------------------------------------------------------- */
+@import "base/plugins";
+
+/*
+Site Header
+----------------------------------------------------------------------------- */
+@import "base/site-header";
+
+
+/*
+Site Navigation
+----------------------------------------------------------------------------- */
+@import "base/site-navigation";
+
+
+/*
+Content Area
+----------------------------------------------------------------------------- */
+@import "base/content-area";
+
+
+/*
+Sidebars
+----------------------------------------------------------------------------- */
+@import "base/sidebars";
+
+
+/*
+Site Footer
+----------------------------------------------------------------------------- */
+@import "base/site-footer";
+
+
+/*
+Refills
+----------------------------------------------------------------------------- */
+@import "base/refills";
+
+
+/*
+Media Queries (Responsive Design Break Points)
+----------------------------------------------------------------------------- */
+@import "base/media-queries";

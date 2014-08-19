@@ -1,0 +1,78 @@
+.widget {
+	word-wrap: break-word;
+}
+
+.widget ol > li {
+	list-style-position: inside;
+	list-style-type: decimal;
+	padding-left: 20px;
+	text-indent: -20px;
+}
+
+.widget li li {
+	border: none;
+	margin: 0 0 0 30px;
+	padding: 0;
+}
+
+.widget_calendar table {
+	width: 100%;
+}
+
+.widget_calendar td,
+.widget_calendar th {
+	text-align: center;
+}
+
+/* Sidebar Widgets
+------------------------------------------------------------ */
+
+.sidebar.widget-area .widget {
+	margin-top: 80px;
+	margin-bottom: 80px;
+}
+
+/* Featured Content
+--------------------------------------------- */
+
+.featured-content .entry {
+	border-bottom: 2px solid $base-border-color;
+	margin-bottom: 20px;
+	padding: 0 0 24px;
+}
+
+.footer-widgets .entry {
+	border-bottom: 1px dotted darken($base-border-color, 25);
+}
+
+.featured-content .entry-title {
+	font-size: 1.618em;
+}
+
+
+/* Genesis Footer Widgets
+--------------------------------------------- */
+
+.footer-widgets .widget {
+	@include pad;
+	@include fill-parent;
+}
+
+.footer-widgets	a {
+		color: $color-cta;
+}
+
+.footer-widgets	input {
+		border: 1px solid $form-border-color;
+}
+
+.footer-widgets	a.button,
+.footer-widgets	a:hover {
+		color: $color-primary;
+}
+
+.footer-widgets	li {
+		border-bottom: 1px dotted $base-border-color;
+		margin-bottom: 10px;
+		padding-bottom: 10px;
+}

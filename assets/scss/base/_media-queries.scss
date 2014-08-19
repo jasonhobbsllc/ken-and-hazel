@@ -1,0 +1,456 @@
+@include media(401px) {
+	body {
+		font-size: 1.0em;
+	}
+}
+
+@include media(801px) {
+	body {
+		font-size: 1.242em;
+	}
+
+	/* Site Header
+	--------------------------------------------- */
+	.site-header .wrap {
+		@include span-columns(12);
+		@include row(table);
+	}
+
+	/* Title Area
+	--------------------------------------------- */
+
+	.title-area {
+		padding: 10px 0;
+		@include span-columns(5);
+	}
+
+	.header-full-width {
+		.title-area {
+			@include fill-parent;
+		}
+	}
+
+	/* Widget Area
+	--------------------------------------------- */
+
+	.site-header .widget-area {
+		text-align: right;
+		@include span-columns(7);
+		@include reset-display;
+		@include pad();
+	}
+
+	/* ### Footer Widgets */
+
+	.footer-widgets .widget {
+		@include pad;
+		@include span-columns(4);
+		@include omega;
+
+		.nth-widget {
+			@include omega(3n);
+		}
+
+	}
+
+	/* Comments
+	--------------------------------------------- */
+
+	.comment-respond,
+	.entry-comments,
+	.entry-pings {
+		background-color: #fff;
+		margin-bottom: 40px;
+		@include outer-container;
+	}
+
+	.comment-respond,
+	.entry-pings {
+		@include pad(40px 40px 16px 0);
+	}
+
+	.entry-comments {
+		@include pad(40px);
+	}
+
+	.comment-header {
+
+	}
+
+	li.comment {
+		@include shift(-1);
+	}
+
+	.comment-content {
+		clear: both;
+	}
+
+	.comment-list li {
+		@include pad(32px);
+	}
+
+	.comment-list li li {
+		@include shift(1);
+	}
+
+	.comment-respond input[type="email"],
+	.comment-respond input[type="text"],
+	.comment-respond input[type="url"] {
+		width: 50%;
+	}
+
+	.comment-respond label {
+		display: block;
+		margin-right: 12px;
+	}
+
+	.entry-comments .comment-author {
+		margin-bottom: 0;
+	}
+
+	.entry-comments .comment-meta {
+		font-family: $meta-font-family;
+	}
+
+	.entry-pings .reply {
+		display: none;
+	}
+
+	.bypostauthor {
+	}
+
+	.form-allowed-tags {
+		background-color: #ECF4F9;
+		@include pad($base-line-height);
+	}
+
+}
+
+@include media(1201px) {
+	body {
+		font-size: 1.375em;
+	}
+
+	/* ## Genesis Nav Menu
+	--------------------------------------------- */
+
+	.genesis-nav-menu {
+		clear: both;
+		line-height: 1;
+		@include fill-parent;
+	}
+
+	.genesis-nav-menu .menu-item {
+		display: inline-block;
+		text-align: left;
+	}
+
+	.genesis-nav-menu a {
+		color: $dark;
+		display: block;
+		@include pad(30px 24px);
+	}
+
+	.genesis-nav-menu a:hover,
+	.genesis-nav-menu .current-menu-item > a,
+	.genesis-nav-menu .sub-menu .current-menu-item > a:hover {
+		color: $color-cta;
+	}
+
+	.genesis-nav-menu .sub-menu {
+		left: -9999px;
+		opacity: 0;
+		position: absolute;
+		-webkit-transition: opacity .4s ease-in-out;
+		-moz-transition:    opacity .4s ease-in-out;
+		-ms-transition:     opacity .4s ease-in-out;
+		-o-transition:      opacity .4s ease-in-out;
+		transition:         opacity .4s ease-in-out;
+		width: 200px;
+		z-index: 99;
+	}
+
+	.genesis-nav-menu .sub-menu a {
+		background-color: $light;
+		border: 1px solid $base-border-color;
+		border-top: none;
+		padding: 20px;
+		position: relative;
+		width: 200px;
+	}
+
+	.genesis-nav-menu .sub-menu .sub-menu {
+		margin: -55px 0 0 199px;
+	}
+
+	.genesis-nav-menu .menu-item:hover {
+		position: static;
+	}
+
+	.genesis-nav-menu .menu-item:hover > .sub-menu {
+		left: auto;
+		opacity: 1;
+	}
+
+	.genesis-nav-menu > .first > a {
+		padding-left: 0;
+	}
+
+	.genesis-nav-menu > .last > a {
+		padding-right: 0;
+	}
+
+	.genesis-nav-menu > .right {
+		color: $light;
+		float: right;
+		list-style-type: none;
+		padding: 30px 0;
+	}
+
+	.genesis-nav-menu > .right > a {
+		display: inline;
+		padding: 0;
+	}
+
+	.genesis-nav-menu > .rss > a {
+		margin-left: 48px;
+	}
+
+	.genesis-nav-menu > .search {
+		padding: 10px 0 0;
+	}
+
+	/* ## Site Header Navigation
+	--------------------------------------------- */
+
+	.site-header .sub-menu {
+		border-top: 1px solid $base-border-color;
+	}
+
+	.site-header .sub-menu .sub-menu {
+		margin-top: -56px;
+	}
+
+	.site-header .genesis-nav-menu li li {
+		margin-left: 0;
+	}
+
+	/* ## Primary Navigation
+	--------------------------------------------- */
+
+	.nav-primary {
+		background-color: $color-primary;
+	}
+
+	.nav-primary .genesis-nav-menu a {
+		color: $light;
+	}
+
+	.nav-primary .genesis-nav-menu .sub-menu a {
+		color: $color-cta;
+	}
+
+	.nav-primary .genesis-nav-menu a:hover,
+	.nav-primary .genesis-nav-menu .current-menu-item > a,
+	.nav-primary .genesis-nav-menu .sub-menu .current-menu-item > a:hover {
+		color: lighten($color-cta, 20);
+	}
+
+	/* ## Secondary Navigation
+	--------------------------------------------- */
+
+	.nav-secondary {
+		background-color: $light;
+	}
+
+	/* Home Page
+	--------------------------------------------- */
+
+	.gg-home .site-container {
+		background: $light;
+	}
+
+	/* Home Top */
+
+	.row-1 {
+		color: $light;
+		margin-bottom: 20px;
+		text-align: center;
+		@include fill-parent;
+		margin-bottom: 20%;
+
+		.wrap {
+			padding-top: 8%;
+			@include row();
+		}
+
+		.fa {
+			font-size: 96px;
+			margin-bottom: 20px;
+		}
+
+		h2 {
+			font-size: 3.257em;
+			font-weight: 700;
+			@include span-columns(6);
+			@include shift(3);
+			text-align: center;
+		}
+
+		p {
+			font-size: 1.333em;
+			@include span-columns(6);
+			@include shift(3);
+			text-align: center;
+		}
+
+		.row-1-button {
+			@include span-columns(6);
+			@include shift(3);
+		}
+
+		.banner-button {
+			background-color: $base-button-color;
+		}
+
+		.banner-button:hover {
+			background-color: $hover-button-color;
+		}
+	}
+
+	/* Home Grid */
+
+	.row-2 {
+		overflow: hidden;
+		@include row();
+		margin-bottom: 10%;
+		@include omega;
+
+		.grid-item {
+			color: $light;
+			float: left;
+			height: 285px;
+			margin: 8px;
+			@include pad(40px 60px);
+			text-align: center;
+			@include span-columns(4 of 12);
+		}
+
+		.grid-item.wide-item {
+			@include span-columns(8 of 12);
+		}
+
+		.grid-item .fa {
+			font-size: 54px;
+			margin-bottom: 20px;
+		}
+
+		.grid-item h2 {
+			color: $light;
+			font-weight: 700;
+			margin-bottom: 10px;
+		}
+	}
+
+	/* Home Bullet */
+
+	$fg-column: 111px;             // Column Width
+	$fg-gutter: 24px;             // Gutter Width
+	$fg-max-columns: 12;          // Total Columns For Main Container
+
+	.gg-home .row-3 {
+		clear: both;
+		@include row();
+
+		.bullet-point-section {
+			float: left;
+			@include span-columns(4);
+  		@include omega(3n);
+		}
+
+		.bulleted-point {
+			float: left;
+			color: $light;
+			width: flex-grid(1, 4);   // returns (145px / 315px) = 46.031746%;
+
+				.fa {
+					border-radius: 50%;
+					font-size: 3.157em;
+					@include pad(15%);
+				}
+		}
+
+		.bullet-text {
+			float: left;
+			width: flex-grid(3, 4);   // returns (145px / 315px) = 46.031746%;
+		}
+	}
+
+	/* ## Site Containers
+	--------------------------------------------- */
+	.site-inner {
+		@include outer-container;
+		@include pad(0);
+	}
+
+	.content {
+		@include pad(default 13%);
+	}
+
+	/* ## Column Widths and Positions
+	--------------------------------------------- */
+
+	/* ### Wrapping div for .content and .sidebar-primary */
+
+	.content-sidebar-sidebar .content-sidebar-wrap,
+	.sidebar-content-sidebar .content-sidebar-wrap,
+	.sidebar-sidebar-content .content-sidebar-wrap {
+		@include span-columns(10);
+	}
+
+	.content-sidebar .content-sidebar-wrap,
+	.sidebar-content .content-sidebar-wrap {
+		@include fill-parent;
+	}
+
+	/* ### Content */
+
+	.content-sidebar-sidebar .content,
+	.sidebar-content-sidebar .content,
+	.sidebar-sidebar-content .content {
+		@include span-columns(6 of 10);
+		@include pad;
+	}
+
+	.content-sidebar .content,
+	.sidebar-content .content {
+		@include span-columns(8);
+		@include pad;
+	}
+
+	.full-width-content .content {
+		@include fill-parent;
+		@include pad(default 13%);
+	}
+
+	/* ### Primary Sidebar */
+
+	.content-sidebar-sidebar .sidebar-primary,
+	.sidebar-content-sidebar .sidebar-primary,
+	.sidebar-sidebar-content .sidebar-primary {
+		@include span-columns(4 of 10);
+	}
+
+	.sidebar-primary {
+		@include span-columns(4);
+		@include pad;
+	}
+
+	/* ### Secondary Sidebar */
+
+	.sidebar-secondary {
+		@include span-columns(2);
+		@include pad;
+	}
+
+}

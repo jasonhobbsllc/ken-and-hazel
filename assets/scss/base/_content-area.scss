@@ -1,0 +1,304 @@
+/* Home Page
+--------------------------------------------- */
+
+/* Home Top */
+
+.home-top-section {
+	color: $light;
+	margin-bottom: 20px;
+	text-align: center;
+	@include fill-parent;
+}
+
+.home-top-section .wrap {
+	padding: 8% 0;
+	@include fill-parent;
+}
+
+.home-top-section .fa {
+	font-size: 96px;
+	margin-bottom: 20px;
+}
+
+.home-top-title {
+	font-size: 2.443em;
+	font-weight: 700;
+	margin: 0 auto;
+	max-width: 1000px;
+}
+
+.home-top-description {
+	font-size: 1.333em;
+	margin: 0 auto 50px;
+	@include fill-parent;
+}
+
+.banner-button {
+	background-color: $base-button-color;
+}
+
+.banner-button:hover {
+	background-color: $hover-button-color;
+}
+
+/* Home Grid */
+
+.grid-section {
+	margin-bottom: 40px;
+	overflow: hidden;
+	@include fill-parent;
+}
+
+.grid-item {
+	color: $light;
+	float: left;
+	height: 285px;
+	margin: 8px;
+	@include pad(40px 60px);
+	text-align: center;
+	@include fill-parent;
+}
+
+.grid-item.wide-item {
+	@include fill-parent;
+}
+
+.grid-item .fa {
+	font-size: 54px;
+	margin-bottom: 20px;
+}
+
+.grid-item h2 {
+	font-size: 2.443em;
+	color: $light;
+	font-weight: 700;
+	margin-bottom: 10px;
+}
+
+/* Home Bullet */
+
+.bullet-section {
+	clear: both;
+	@include fill-parent;
+}
+
+.bottom-bullet-point {
+	float: left;
+	@include fill-parent;
+}
+
+.bullet-section .fa {
+	border-radius: 30px;
+	color: $light;
+	font-size: 30px;
+	left: 0;
+	padding: 12px 0;
+	position: absolute;
+	top: 0;
+	width: 25%;
+}
+
+.bottom-bullet-title {
+	font-weight: 700;
+}
+
+.bottom-bullet-title,
+.bottom-bullet-text {
+	padding-left: 76px;
+}
+
+.full-width-content.gg-home .content {
+	width: 100%;
+	padding: 1.50376% 0;
+}
+
+/* Content
+--------------------------------------------- */
+
+.content {
+	@include pad(default 6%);
+}
+
+/* Entry Meta
+--------------------------------------------- */
+
+.entry-header {
+	text-align: left;
+
+	p.entry-meta {
+		font-family: $meta-font-family;
+	}
+
+	a {
+		color: lighten($color-cta, 25);
+	}
+
+	a:hover {
+		color: lighten($color-cta, 5);
+	}
+}
+
+.sidebar .entry-header::after {
+	display: none;
+}
+
+.entry-categories::before,
+.entry-tags::before {
+	display: inline-block;
+	font: normal 20px/1 'dashicons';
+	margin-right: 5px;
+	margin-top: 2px;
+	vertical-align: top;
+	-webkit-font-smoothing: antialiased;
+}
+
+.entry-categories::before {
+	content: "\f318";
+}
+
+.entry-tags::before {
+	content: "\f323";
+}
+
+.entry-categories,
+.entry-tags {
+	display: block;
+}
+
+.entry-comments-link::before {
+	content: "\2014";
+	margin: 0 6px 0 2px;
+}
+
+/* Entry Title
+--------------------------------------------- */
+
+.entry-title {
+	font-size: 2.618em;
+	line-height: $header-line-height;
+}
+
+/* Pagination
+--------------------------------------------- */
+
+.pagination,
+.archive-pagination {
+  $pagination-background: $base-font-color;
+  $pagination-hover-background: $base-button-color;
+  $pagination-color: $light;
+
+	text-align: left;
+	margin: 40px 0 60px;
+	@include clearfix();
+
+  ul {
+    display: inline;
+		text-align: center;
+		@include clearfix;
+
+    li {
+      display: inline;
+    }
+
+    ul li {
+      display: none;
+
+      &:nth-child(1),
+      &:nth-child(2),
+      &:nth-child(3) {
+        display: inline;
+      }
+
+    }
+
+    li a {
+      @include transition (all 0.2s ease-in-out);
+      background: $pagination-background;
+      border-radius: $base-border-radius;
+      padding: $gutter/3 $gutter/2 $gutter/2;
+	  color: $pagination-color;
+
+      &:hover,
+      &:focus {
+        background: $pagination-hover-background;
+        color: $pagination-color;
+      }
+
+      &:active {
+        background: $pagination-background;
+      }
+    }
+  }
+}
+
+/* Comments
+--------------------------------------------- */
+
+.comment-respond,
+.entry-comments,
+.entry-pings {
+	background-color: #fff;
+	margin-bottom: 40px;
+	@include outer-container;
+}
+
+.comment-respond,
+.entry-pings {
+	@include pad(20px 20px 8px 0);
+}
+
+.entry-comments {
+	@include pad();
+}
+
+.comment-header {
+
+}
+
+li.comment {
+	@include shift(-1);
+	list-style-type: none;
+}
+
+.comment-content {
+	clear: both;
+}
+
+.comment-list li {
+	@include pad();
+}
+
+.comment-list li li {
+	@include shift(-1);
+}
+
+.comment-respond input[type="email"],
+.comment-respond input[type="text"],
+.comment-respond input[type="url"] {
+	width: 50%;
+}
+
+.comment-respond label {
+	display: block;
+	margin-right: 12px;
+}
+
+.entry-comments .comment-author {
+	margin-bottom: 0;
+}
+
+.entry-comments .comment-meta {
+	font-family: $meta-font-family;
+}
+
+.entry-pings .reply {
+	display: none;
+}
+
+.bypostauthor {
+}
+
+.form-allowed-tags {
+	background-color: #ECF4F9;
+	@include pad();
+}

@@ -1,0 +1,77 @@
+/* Genesis eNews Extended
+--------------------------------------------- */
+
+.enews-widget input,
+.enews-widget input:focus {
+	border: 1px solid $form-border-color;
+}
+
+.enews-widget input {
+	font-size: $form-font-size * .75;
+	margin-bottom: $scale;
+}
+
+.enews-widget input[type="submit"] {
+	background-color: $base-button-color;
+	color: $light;
+	margin: 0;
+	width: 100%;
+	border: none;
+}
+
+.enews-widget input:hover[type="submit"] {
+	background-color: $hover-button-color;
+	color: #fff;
+}
+
+.sidebar .widget.enews-widget {
+	background-color: $light;
+}
+
+.enews form + p {
+	margin-top: $scale * 1.5;
+}
+
+.enews-widget p {
+	color: $base-font-color;
+}
+
+/* Gravity Forms
+--------------------------------------------- */
+
+div.gform_wrapper input[type="email"],
+div.gform_wrapper input[type="text"],
+div.gform_wrapper textarea,
+div.gform_wrapper .gform_footer input[type=submit] {
+	width: 100% !important;
+}
+
+div.gform_wrapper input[type="email"],
+div.gform_wrapper input[type="text"],
+div.gform_wrapper textarea,
+div.gform_wrapper .ginput_complex label {
+	font-size: $form-font-size * 1.25;
+	padding: $scale;
+}
+
+div.gform_wrapper .ginput_complex label {
+	padding: 0;
+}
+
+div.gform_wrapper li,
+div.gform_wrapper form li {
+	margin: $scale 0 0;
+}
+
+div.gform_wrapper .gform_footer input[type=submit] {
+	font-size: $form-font-size * 1.12;
+	margin-bottom: 40px;
+	padding: $scale * 1.5;
+}
+
+/* JetPack
+--------------------------------------------- */
+
+#wpstats {
+	display: none;
+}

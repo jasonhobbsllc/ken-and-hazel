@@ -1,0 +1,70 @@
+.site-header {
+	background: transparent;
+	@include outer-container;
+	padding: ($scale * 2.5);
+}
+
+.site-header .wrap {
+	@include fill-parent;
+}
+
+/* Title Area
+--------------------------------------------- */
+
+.title-area {
+	padding: 10px 0;
+	@include fill-parent;
+}
+
+.header-full-width {
+	.title-area {
+		@include fill-parent;
+	}
+}
+
+.site-title {
+	font-size: 2.618em;
+	font-weight: 400;
+	line-height: $header-line-height;
+	margin: 0;
+
+	a,
+	a:hover {
+		color: $base-font-color;
+	}
+}
+
+.header-image .site-title > a {
+	background: url(assets/images/logo.png) no-repeat left;
+	float: left;
+	min-height: 60px;
+	width: 100%;
+}
+
+.site-description {
+	font-weight: 300;
+	line-height: $unitless-line-height;
+	color: $base-font-color;
+	display: none;
+}
+
+.site-description,
+.site-title {
+	margin-bottom: 0;
+}
+
+.header-image {
+	.site-description,
+	.site-title {
+		display: block;
+		text-indent: -9999px;
+	}
+}
+
+/* Widget Area
+--------------------------------------------- */
+
+.site-header .widget-area {
+	text-align: right;
+	@include fill-parent;
+}

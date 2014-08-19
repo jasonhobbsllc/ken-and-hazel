@@ -1,0 +1,96 @@
+fieldset {
+  background: lighten($base-border-color, 10);
+  border: 1px solid $base-border-color;
+  margin: 0 0 ($base-line-height / 2) 0;
+  @include pad();
+  @include fill-parent;
+}
+
+::-moz-placeholder {
+    color: $color-primary;
+    opacity: 1;
+    font-weight: 400;
+}
+
+::-webkit-input-placeholder {
+    color: $color-primary;
+    font-weight: 400;
+}
+
+input,
+label,
+select {
+  display: block;
+  font-family: $form-font-family;
+  font-size: $form-font-size;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: $base-line-height / 4;
+
+  &.required:after {
+    content: "*";
+  }
+
+  abbr {
+    display: none;
+  }
+}
+
+textarea,
+#{$all-text-inputs},
+select[multiple=multiple] {
+  @include box-sizing(border-box);
+  @include transition(border-color);
+  background-color: $light;
+  border-radius: $form-border-radius;
+  border: 1px solid $form-border-color;
+  box-shadow: $form-box-shadow;
+  font-family: $form-font-family;
+  font-size: $form-font-size;
+  margin-bottom: $base-line-height / 2;
+  padding: ($base-line-height / 3) ($base-line-height / 3);
+  width: 100%;
+
+  &:hover {
+    border-color: $form-border-color-hover;
+  }
+
+  &:focus {
+    border-color: $form-border-color-focus;
+    box-shadow: $form-box-shadow-focus;
+    outline: none;
+  }
+}
+
+textarea {
+  resize: vertical;
+}
+
+input[type="search"] {
+  @include appearance(none);
+}
+
+input[type="checkbox"], input[type="image"], input[type="radio"] {
+  width: auto;
+  display: inline;
+  margin-right: $base-line-height / 4;
+}
+
+input[type="file"] {
+  margin-bottom: $base-line-height / 2;
+  padding-bottom: ($base-line-height / 3);
+  width: 100%;
+}
+
+select {
+  width: auto;
+  max-width: 100%;
+  margin-bottom: $base-line-height;
+}
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button {
+    display: none;
+}
